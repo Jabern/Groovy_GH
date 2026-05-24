@@ -8,6 +8,8 @@
 
 ---
 
+[![Groovy Demo](https://img.youtube.com/vi/1vQT0u-1pd0/maxresdefault.jpg)](https://www.youtube.com/watch?v=1vQT0u-1pd0)
+
 Audio-driven kinetic motion system for Grasshopper + Rhino 8.  
 
 ## Build
