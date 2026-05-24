@@ -1,0 +1,56 @@
+{
+  "preset": "Classical",
+  "fps": 30,
+  "numPanels": 80,
+  "panelGroupDistribution": {
+    "bass": 0.15,
+    "mid": 0.60,
+    "treble": 0.25
+  },
+  "frequencyBands": {
+    "bass": [20, 250],
+    "mid": [250, 4000],
+    "treble": [4000, 20000]
+  },
+  "panelGroups": [
+    {
+      "name": "Orchestra Bass",
+      "band": "bass",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 350],
+      "responseCurve": "linear",
+      "exponent": 1.5,
+      "beatEnabled": false
+    },
+    {
+      "name": "Strings Mid",
+      "band": "mid",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 500],
+      "responseCurve": "sqrt",
+      "exponent": 1.5,
+      "beatEnabled": false
+    },
+    {
+      "name": "Flute Treble",
+      "band": "treble",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 250],
+      "responseCurve": "linear",
+      "exponent": 1.5,
+      "beatEnabled": false
+    }
+  ],
+  "beatImpulse": {
+    "enabled": false,
+    "threshold": 0.6,
+    "magnitudeMm": 150,
+    "attackFrames": 4,
+    "decayFrames": 12
+  },
+  "smoothing": {
+    "enabled": true,
+    "windowSize": 8,
+    "type": "movingAverage"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "preset": "Techno",
+  "fps": 30,
+  "numPanels": 120,
+  "panelGroupDistribution": {
+    "bass": 0.30,
+    "mid": 0.40,
+    "treble": 0.30
+  },
+  "frequencyBands": {
+    "bass": [20, 250],
+    "mid": [250, 4000],
+    "treble": [4000, 20000]
+  },
+  "panelGroups": [
+    {
+      "name": "Kick Bass",
+      "band": "bass",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 700],
+      "responseCurve": "exponential",
+      "exponent": 3.0,
+      "beatEnabled": true
+    },
+    {
+      "name": "Synth Mid",
+      "band": "mid",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 450],
+      "responseCurve": "linear",
+      "exponent": 1.5,
+      "beatEnabled": true
+    },
+    {
+      "name": "Hi-Hat Treble",
+      "band": "treble",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 150],
+      "responseCurve": "sqrt",
+      "exponent": 1.5,
+      "beatEnabled": false
+    }
+  ],
+  "beatImpulse": {
+    "enabled": true,
+    "threshold": 0.3,
+    "magnitudeMm": 400,
+    "attackFrames": 1,
+    "decayFrames": 6
+  },
+  "smoothing": {
+    "enabled": true,
+    "windowSize": 2,
+    "type": "movingAverage"
+  }
+}

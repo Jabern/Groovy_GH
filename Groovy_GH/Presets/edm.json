@@ -1,0 +1,56 @@
+{
+  "preset": "EDM",
+  "fps": 30,
+  "numPanels": 100,
+  "panelGroupDistribution": {
+    "bass": 0.25,
+    "mid": 0.50,
+    "treble": 0.25
+  },
+  "frequencyBands": {
+    "bass": [20, 250],
+    "mid": [250, 4000],
+    "treble": [4000, 20000]
+  },
+  "panelGroups": [
+    {
+      "name": "Bass Punch",
+      "band": "bass",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 600],
+      "responseCurve": "exponential",
+      "exponent": 2.5,
+      "beatEnabled": true
+    },
+    {
+      "name": "Mid Groove",
+      "band": "mid",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 400],
+      "responseCurve": "linear",
+      "exponent": 1.5,
+      "beatEnabled": false
+    },
+    {
+      "name": "Treble Sparkle",
+      "band": "treble",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 200],
+      "responseCurve": "sqrt",
+      "exponent": 1.5,
+      "beatEnabled": false
+    }
+  ],
+  "beatImpulse": {
+    "enabled": true,
+    "threshold": 0.4,
+    "magnitudeMm": 300,
+    "attackFrames": 2,
+    "decayFrames": 8
+  },
+  "smoothing": {
+    "enabled": true,
+    "windowSize": 3,
+    "type": "movingAverage"
+  }
+}

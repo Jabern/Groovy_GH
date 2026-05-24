@@ -1,0 +1,56 @@
+{
+  "preset": "Rock",
+  "fps": 30,
+  "numPanels": 100,
+  "panelGroupDistribution": {
+    "bass": 0.20,
+    "mid": 0.50,
+    "treble": 0.30
+  },
+  "frequencyBands": {
+    "bass": [20, 250],
+    "mid": [250, 4000],
+    "treble": [4000, 20000]
+  },
+  "panelGroups": [
+    {
+      "name": "Bass & Kick",
+      "band": "bass",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 500],
+      "responseCurve": "exponential",
+      "exponent": 2.0,
+      "beatEnabled": true
+    },
+    {
+      "name": "Guitar Mid",
+      "band": "mid",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 450],
+      "responseCurve": "linear",
+      "exponent": 1.5,
+      "beatEnabled": false
+    },
+    {
+      "name": "Cymbal Treble",
+      "band": "treble",
+      "axis": [0, 0, 1],
+      "rangeMm": [0, 200],
+      "responseCurve": "sqrt",
+      "exponent": 1.5,
+      "beatEnabled": false
+    }
+  ],
+  "beatImpulse": {
+    "enabled": true,
+    "threshold": 0.45,
+    "magnitudeMm": 250,
+    "attackFrames": 3,
+    "decayFrames": 10
+  },
+  "smoothing": {
+    "enabled": true,
+    "windowSize": 4,
+    "type": "movingAverage"
+  }
+}
